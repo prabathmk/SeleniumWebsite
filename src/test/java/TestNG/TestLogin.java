@@ -27,9 +27,9 @@ public class TestLogin {
 	public static void testLogin() {
 		
 		
-	ffdriver.findElement(By.id("login")).sendKeys("devops");
-	ffdriver.findElement(By.id("password")).sendKeys("test");
-	ffdriver.findElement(By.id("click")).click();
+	ffdriver.findElement(By.xpath("/html/body/form/div/div/div/div[1]/div[2]")).sendKeys("devops");
+	ffdriver.findElement(By.xpath("/html/body/form/div/div/div/div[1]/div[4]")).sendKeys("test");
+	ffdriver.findElement(By.xpath("/html/body/form/div/div/div/div[1]/div[6]")).click();
 	
 	}
 	
