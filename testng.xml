@@ -5,7 +5,6 @@
 
 <classes>
 
-<!-- <class name="TestNG.VerifyTitle"></class>-->
  <class name="TestNG.TestLogin"></class>
 
 </classes>
