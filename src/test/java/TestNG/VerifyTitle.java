@@ -1,4 +1,4 @@
-package TestNG;
+/*package TestNG;
 import java.awt.Window;
 
 import org.openqa.selenium.By;
@@ -27,5 +27,5 @@ public class VerifyTitle {
 	
 	}
 
-}
+}*/
 
