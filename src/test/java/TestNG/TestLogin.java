@@ -4,7 +4,8 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+//import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -18,8 +19,10 @@ public class TestLogin {
 	@Test
 	public static void testLogin() {
 		
-	System.setProperty("webdriver.gecko.driver", "geckodriver");
-	FirefoxDriver ffdriver = new FirefoxDriver();
+	//System.setProperty("webdriver.gecko.driver", "geckodriver");
+	System.setProperty("webdriver.chrome.driver", "chromedriver");
+	//FirefoxDriver ffdriver = new FirefoxDriver();
+	ChromeDriver ffdriver = new ChromeDriver();
 	ffdriver.get("http://localhost:3001/");
 	ffdriver.manage().window().maximize();
 	ffdriver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);		
