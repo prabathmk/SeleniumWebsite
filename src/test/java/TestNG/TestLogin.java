@@ -18,7 +18,7 @@ public class TestLogin {
 	@Test
 	public static void testLogin() {
 		
-	System.setProperty("webdriver.gecko.driver", "geckodriver.exe");
+	System.setProperty("webdriver.gecko.driver", "geckodriver");
 	FirefoxDriver ffdriver = new FirefoxDriver();
 	ffdriver.get("http://localhost:3001/");
 	ffdriver.manage().window().maximize();
